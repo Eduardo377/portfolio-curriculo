@@ -46,8 +46,28 @@ img {
   max-width: 150px !important;
 }
 
+.header-container h1 {
+  font-size: 2.7em;
+  font-weight: 700;
+}
+
+.header-container h3 {
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+.header-container li {
+  font-size: 1em;
+  font-weight: 900;
+}
+
 .doc p {
   text-align: center;
+  font-size: 1em;
+  font-weight: 700;
+  
+  font-size: .9em;
+  font-weight: 500;
 }
 
 .main {
@@ -245,4 +265,11 @@ a:active {
 
 .footer p {
   padding-top: 0.5rem;
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.footer-links li a p {  
+  font-size: .9em;
+  font-weight: 700;
 }
