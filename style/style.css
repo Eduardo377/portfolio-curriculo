@@ -63,11 +63,11 @@ img {
   align-items: center;
 }
 
-.logo {
+/* .logo {
   position: absolute;
   left: 0;
   top: 15;
-}
+} */
 
 .logo:hover {
   background-color: rgba(255, 255, 255, 0.9);
@@ -143,8 +143,9 @@ img {
   }
 }
 
-.doc-text {
-  
+.doc-text:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  transition-duration: .9s;
 }
 
 @media (min-width: 428px) {
