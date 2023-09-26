@@ -11,19 +11,29 @@ body {
 }
 
 .header-container {
-    padding: 15px;
     gap: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
 }
 
-.header-padding {
-  gap: 100px;
+.header-container img {
+  cursor: pointer;
 }
 
 .header-container .header-padding .titulo {
   text-align: center;
+}
+
+.titulo {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: 900;
 }
 
 .header-container .header-padding ul {
@@ -42,36 +52,129 @@ img {
 }
 
 .header-container img {
-  height: 150px !important;
-  max-width: 150px !important;
+  height: 90px;
+  max-width: 90px;
 }
 
-.header-container h1 {
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 15;
+}
+
+.logo:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+  transition-duration: 3s;
+}
+
+@media (min-width: 884px) {
+  .header-container img {
+    max-height: 80px;
+  }
+}
+
+.header-padding h1{
   font-size: 2.7em;
-  font-weight: 700;
+  font-weight: 900;
 }
 
-.header-container h3 {
+.header-padding h3 {
   font-size: 1.7em;
   font-weight: 700;
 }
 
-.header-container li {
-  font-size: 1em;
-  font-weight: 900;
-}
-
-.doc p {
-  text-align: center;
+.header-padding ul li {
   font-size: 1em;
   font-weight: 700;
-  
-  font-size: .9em;
+}
+
+.doc-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.doc-link p {
+  text-align: center;
+  font-size: 1em;
   font-weight: 500;
 }
 
+.doc-link p:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+  transition-duration: 3s;
+}
+
+.doc-image {
+  height: 80px;
+  width: 80px;
+}
+
+.doc-image:hover {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition-duration: .9s;
+  transform: scale(0.9);
+}
+
+@media (min-width: 884px) {
+  .doc-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 884px) {
+  .doc-image {
+    max-height: 80px;
+  }
+}
+
+.doc-text {
+  
+}
+
+@media (min-width: 428px) {
+  .header-div h1{
+    margin-left: 110px;
+    margin-bottom: 15px;
+  }
+
+    .header-div h3{
+    margin-left: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 428px) {
+  .logo {
+      position: fixed;
+      left: 1em;
+      top: 0;
+  }
+}
+
+@media (min-width: 428px) {
+  .titulo {
+    font-size: 2em;
+    font-weight: 700;
+  }
+}
+
 .main {
-  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +199,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
   }
   
@@ -118,16 +222,26 @@ img {
     transition: 400ms;
   }
   
-  .cards .card p.tip {
+  .tip {
     font-size: 1em;
     font-weight: 700;
   }
   
-  .cards .card p.second-text {
+  .second-text {
     font-size: .9em;
     font-weight: 500;
   }
+
+  .tip:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+    transition-duration: 3s;
+  }
   
+  .second-text:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+    transition-duration: 3s;
+  }
+
   .cards .card:hover {
     transform: scale(1.1, 1.1);
   }
@@ -147,17 +261,6 @@ img {
     text-decoration: none;
     color: #ffffff;
   }
-  
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #ffffff;
-  background-color: transparent;
-  text-decoration: underline;
-}
 
 .container-card-social {
   display: flex;
@@ -255,21 +358,29 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .footer a {
   color: #000000;
 }
 
-.footer p {
-  padding-top: 0.5rem;
-  font-size: .9em;
-  font-weight: 700;
+.footer a:hover {
+  color: #ffffff;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer-links li a p {  
-  font-size: .9em;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.footer p {
+  padding-top: 0.5rem;
+  font-size: 1.1em;
   font-weight: 700;
 }
