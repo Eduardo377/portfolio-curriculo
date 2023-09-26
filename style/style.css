@@ -63,6 +63,10 @@ img {
   align-items: center;
 }
 
+.header-div h3{
+  text-align: center;
+}
+
 .logo {
   position: relative;
   left: 1em;
