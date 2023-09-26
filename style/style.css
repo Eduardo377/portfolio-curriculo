@@ -63,23 +63,17 @@ img {
   align-items: center;
 }
 
-/* .logo {
-  position: absolute;
-  left: 0;
-  top: 15;
-} */
+.logo {
+  position: relative;
+  left: 1em;
+  top: 5px;
+}
 
 .logo:hover {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   border-bottom: 3px solid rgba(255, 255, 255, 0.9);
   transition-duration: 3s;
-}
-
-@media (min-width: 884px) {
-  .header-container img {
-    max-height: 80px;
-  }
 }
 
 .header-padding h1{
@@ -128,51 +122,9 @@ img {
   transform: scale(0.9);
 }
 
-@media (min-width: 884px) {
-  .doc-link {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (min-width: 884px) {
-  .doc-image {
-    max-height: 80px;
-  }
-}
-
 .doc-text:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   transition-duration: .9s;
-}
-
-@media (min-width: 428px) {
-  .header-div h1{
-    margin-left: 110px;
-    margin-bottom: 15px;
-  }
-
-    .header-div h3{
-    margin-left: 8px;
-    margin-bottom: 15px;
-  }
-}
-
-@media (min-width: 428px) {
-  .logo {
-      position: fixed;
-      left: 1em;
-      top: 0;
-  }
-}
-
-@media (min-width: 428px) {
-  .titulo {
-    font-size: 2em;
-    font-weight: 700;
-  }
 }
 
 .main {
@@ -368,6 +320,11 @@ img {
 
 .footer a {
   color: #000000;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer a:hover {
