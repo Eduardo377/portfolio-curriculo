@@ -14,15 +14,12 @@ body {
     gap: 1rem;
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    min-width: 100%;
+    margin: 1rem;
     position: relative;
-}
-
-.header-container img {
-  cursor: pointer;
 }
 
 .header-container .header-padding .titulo {
@@ -34,6 +31,13 @@ body {
   text-align: center;
   font-size: 2.7em;
   font-weight: 900;
+}
+
+@media (min-width: 428px) {
+  .header-div {
+    font-size: 1em;
+    font-weight: 100em;
+  }
 }
 
 .header-container .header-padding ul {
@@ -54,6 +58,7 @@ img {
 .header-container img {
   height: 90px;
   max-width: 90px;
+  cursor: pointer;
 }
 
 .header {
@@ -63,8 +68,10 @@ img {
   align-items: center;
 }
 
-.header-div h3{
-  text-align: center;
+.header-div {
+  color: rgba(255, 255, 255, 1.1);
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 1.1);
+  padding: 2em;
 }
 
 .logo {
@@ -80,14 +87,10 @@ img {
   transition-duration: 3s;
 }
 
-.header-padding h1{
-  font-size: 2.7em;
-  font-weight: 900;
-}
-
-.header-padding h3 {
-  font-size: 1.7em;
-  font-weight: 700;
+.header-padding {
+  padding: 60px;
+  color: rgb(255, 255, 255, 1.1);
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 1.1);
 }
 
 .header-padding ul li {
@@ -100,6 +103,7 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   cursor: pointer;
 }
 
@@ -126,6 +130,10 @@ img {
   transform: scale(0.9);
 }
 
+.doc-text {
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 1.1);
+}
+
 .doc-text:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   transition-duration: .9s;
@@ -145,11 +153,19 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   background-image: url("../assets/cloud.webp");
   background-size: 50% auto;
   background-repeat: repeat-x;
   flex-grow: 1;
+  gap: 2em;
+}
+
+.apresentacao {
+  font-size: 2em;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 1.1);
 }
 
 .cards {
@@ -217,6 +233,7 @@ img {
   a {
     text-decoration: none;
     color: #ffffff;
+    text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.1);
   }
 
 .container-card-social {
