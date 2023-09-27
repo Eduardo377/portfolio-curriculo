@@ -10,6 +10,25 @@ body {
     background: linear-gradient(0.25turn, #0007DB, #0CACF2, #0007DB, #0CACF2);
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-mp4: url("../assets/clouds_movie.mp4");
+}
+
+.bg_video{
+  position: fixed; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+  z-index: -1000;
+}
+
 .header-container {
     gap: 1rem;
     display: flex;
@@ -61,13 +80,6 @@ img {
   cursor: pointer;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .header-div {
   color: rgba(255, 255, 255, 1.1);
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 1.1);
@@ -84,7 +96,8 @@ img {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   border-bottom: 3px solid rgba(255, 255, 255, 0.9);
-  transition-duration: 3s;
+  transition-duration: .9s;
+  transform: scale(0.9);
 }
 
 .header-padding {
@@ -144,7 +157,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("../assets/cloud.webp");
+  background: linear-gradient(0.25turn, #0007DB, #0CACF2, #0007DB, #0CACF2);
   gap: 10px;
 }
 

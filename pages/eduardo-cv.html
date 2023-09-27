@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/download.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,9 +36,13 @@
 </head>
 
 <header class="header ">
-
+    <video autoplay muted loop poster="../assets/clouds_movie.mp4" class="bg_video">
+        <source src="../assets/clouds_movie.mp4" type="video/mp4">
+    </video>
     <div class="header-container ">
-        <img src="../assets/cloud-logo.png " class="logo" alt="Logo em forma de nuvem, referente a cloud ">
+        <a href="../index.html">
+            <img src="../assets/cloud-logo.png " class="logo" alt="Logo em forma de nuvem, referente a cloud ">
+        </a>
         <div class="header-div">
             <h1 class="titulo ">
                 Cloud Portfólios
@@ -46,7 +51,10 @@
                 Projeto patrocinado pela Escola da Nuvem.
             </h3>
         </div>
-        <img src="../assets/eduardo-perfil.jpg" alt="imagem de currículo de Stefani" class="img-perfil">
+        <a class="perfil" href="../doc/Eduardo Gomes Andrade.pdf" target="_blank">
+            <img src="../assets/eduardo-perfil.jpg" alt="imagem de currículo de Stefani" class="img-perfil">
+            <button class="button"><span>Download<br>CV</span></button>
+        </a>
     </div>
     <div class="header-padding ">
         <ul>
